@@ -31,10 +31,13 @@ namespace BidOneTest.WebApi.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("")]
-        public async Task<IActionResult> Post([FromBody] Model model)
+        public async Task<IActionResult> Index([FromBody] Model model)
         {
             try
             {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
                 await this._fileHandler.WriteFileAsync($"{DateTime.Now:yyyyMMddhhMMss}.txt",
                     Newtonsoft.Json.JsonConvert.SerializeObject(model));
 
