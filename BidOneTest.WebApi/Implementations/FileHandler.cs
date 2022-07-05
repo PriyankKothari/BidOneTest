@@ -37,10 +37,7 @@ namespace BidOneTest.WebApi.Implementations
         {
             try
             {
-                await using (var streamWriter = new StreamWriter(new FileStream(Path.Combine(this.DirectoryPath, fileName), FileMode.OpenOrCreate, FileAccess.ReadWrite)))
-                {
-                    await streamWriter.WriteAsync(fileContent);
-                }
+                await File.WriteAllTextAsync(Path.Combine(this.DirectoryPath, fileName), fileContent);
             }
             catch (Exception exception)
             {

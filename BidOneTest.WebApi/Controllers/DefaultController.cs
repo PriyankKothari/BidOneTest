@@ -1,6 +1,7 @@
 ﻿using BidOneTest.WebApi.Interfaces;
 using BidOneTest.WebApi.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace BidOneTest.WebApi.Controllers
 {
@@ -39,7 +40,7 @@ namespace BidOneTest.WebApi.Controllers
                     return BadRequest(ModelState);
 
                 await this._fileHandler.WriteFileAsync($"{DateTime.Now:yyyyMMddhhMMss}.txt",
-                    Newtonsoft.Json.JsonConvert.SerializeObject(model));
+                    JsonConvert.SerializeObject(model, Formatting.Indented));
 
                 return Ok();
             }
