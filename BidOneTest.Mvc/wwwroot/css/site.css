@@ -16,3 +16,12 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+input[type=submit] {
+    margin: 15px 0;
+}
