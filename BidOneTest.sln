@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BidOneTest.Api", "BidOneTes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BidOneTest.Tests", "BidOneTest.Tests\BidOneTest.Tests.csproj", "{163BD775-9A18-4CC6-B04F-0E0845AE4C2F}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "BidOneTest.Web", "BidOneTest.Web\BidOneTest.Web.esproj", "{8B699C65-10A4-4B30-AB60-D47783A39012}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BidOneTest.Mvc", "BidOneTest.Mvc\BidOneTest.Mvc.csproj", "{15D234F2-D100-4109-9628-34DFEAE40069}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +23,10 @@ Global
 		{163BD775-9A18-4CC6-B04F-0E0845AE4C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{163BD775-9A18-4CC6-B04F-0E0845AE4C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{163BD775-9A18-4CC6-B04F-0E0845AE4C2F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B699C65-10A4-4B30-AB60-D47783A39012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B699C65-10A4-4B30-AB60-D47783A39012}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B699C65-10A4-4B30-AB60-D47783A39012}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{8B699C65-10A4-4B30-AB60-D47783A39012}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B699C65-10A4-4B30-AB60-D47783A39012}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B699C65-10A4-4B30-AB60-D47783A39012}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{15D234F2-D100-4109-9628-34DFEAE40069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15D234F2-D100-4109-9628-34DFEAE40069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15D234F2-D100-4109-9628-34DFEAE40069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15D234F2-D100-4109-9628-34DFEAE40069}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
