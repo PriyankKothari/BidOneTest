@@ -4,28 +4,45 @@ using Microsoft.Extensions.Options;
 
 namespace BidOneTest.Mvc.Controllers
 {
+    /// <summary>
+    /// Test Controller
+    /// </summary>
     public class TestController : Controller
     {
-        private readonly AppSettings.AppSettings _settings;
+        // AppSettings interface
+        private readonly AppSettings.AppSettings _appSettings;
 
-        public TestController(IOptions<AppSettings.AppSettings> settingsOptions)
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="settingsOptions">AppSettings Options</param>
+        public TestController(IOptions<AppSettings.AppSettings> appSettingsOptions)
         {
-            this._settings = settingsOptions.Value;
+            this._appSettings = appSettingsOptions.Value;
         }
 
+        /// <summary>
+        /// Index action
+        /// </summary>
+        /// <returns>Index view</returns>
         [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
+        /// <summary>
+        /// Index action
+        /// </summary>
+        /// <param name="viewModel">View Model</param>
+        /// <returns>Redirects to Index action or renders Error view</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Index(ViewModel viewModel)
         {
             try
             {
-                using (var httpClient = new HttpClient() { BaseAddress = new Uri(this._settings.ApiRootUrl) })
+                using (var httpClient = new HttpClient() { BaseAddress = new Uri(this._appSettings.ApiRootUrl) })
                 {
                     var postJsonAsyncTask = await httpClient.PostAsJsonAsync<ViewModel>("", viewModel);
 
