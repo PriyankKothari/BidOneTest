@@ -1,5 +1,5 @@
-using BidOneTest.WebApi.Implementations;
-using BidOneTest.WebApi.Interfaces;
+using BidOneTest.Api.Implementations;
+using BidOneTest.Api.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 

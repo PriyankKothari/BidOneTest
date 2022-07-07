@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BidOneTest.WebApi\BidOneTest.Api.csproj" />
+    <ProjectReference Include="..\BidOneTest.Api\BidOneTest.Api.csproj" />
   </ItemGroup>
 
 </Project>

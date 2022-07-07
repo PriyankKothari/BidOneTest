@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using BidOneTest.WebApi.Controllers;
-using BidOneTest.WebApi.Interfaces;
-using BidOneTest.WebApi.Models;
+using BidOneTest.Api.Controllers;
+using BidOneTest.Api.Interfaces;
+using BidOneTest.Api.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.VisualStudio.TestTools.UnitTesting;

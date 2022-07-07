@@ -1,4 +1,4 @@
-﻿namespace BidOneTest.WebApi.Interfaces
+﻿namespace BidOneTest.Api.Interfaces
 {
     public interface IFileHandler
     {

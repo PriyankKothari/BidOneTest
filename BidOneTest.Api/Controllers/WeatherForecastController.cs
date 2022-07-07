@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace BidOneTest.WebApi.Controllers
+namespace BidOneTest.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]

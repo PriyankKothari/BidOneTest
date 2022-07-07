@@ -1,6 +1,6 @@
-﻿using BidOneTest.WebApi.Interfaces;
+﻿using BidOneTest.Api.Interfaces;
 
-namespace BidOneTest.WebApi.Implementations
+namespace BidOneTest.Api.Implementations
 {
     /// <summary>
     /// File Handler

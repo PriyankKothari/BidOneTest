@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
-using BidOneTest.WebApi.Implementations;
-using BidOneTest.WebApi.Interfaces;
+using BidOneTest.Api.Implementations;
+using BidOneTest.Api.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 

@@ -1,4 +1,4 @@
-namespace BidOneTest.WebApi
+namespace BidOneTest.Api
 {
     public class WeatherForecast
     {

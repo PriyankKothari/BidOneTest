@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BidOneTest.WebApi.Models
+namespace BidOneTest.Api.Models
 {
     public class Model
     {
@@ -11,9 +11,11 @@ namespace BidOneTest.WebApi.Models
         }
 
         [Required(ErrorMessage = "FirstName is required")]
+        [MaxLength(50, ErrorMessage = "First name cannot be more than 50 characters")]
         public string FirstName { get; set; }
 
         [Required(ErrorMessage = "LastName is required")]
+        [MaxLength(50, ErrorMessage = "Last name cannot be more than 50 characters")]
         public string LastName { get; set; }
     }
 }

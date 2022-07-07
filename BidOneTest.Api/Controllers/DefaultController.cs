@@ -1,9 +1,10 @@
-﻿using BidOneTest.WebApi.Interfaces;
-using BidOneTest.WebApi.Models;
+﻿using System.Net;
+using BidOneTest.Api.Interfaces;
+using BidOneTest.Api.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace BidOneTest.WebApi.Controllers
+namespace BidOneTest.Api.Controllers
 {
     /// <summary>
     /// Default Controller
@@ -32,7 +33,7 @@ namespace BidOneTest.WebApi.Controllers
         /// <returns></returns>
         [HttpPost]
         [Route("")]
-        public async Task<IActionResult> Index([FromBody] Model model)
+        public async Task<IActionResult> Index([FromBody][Bind("FirstName, LastName")] Model model)
         {
             try
             {
